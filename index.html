@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Copywriting Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #0A0A0A;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: #1E3A8A; /* Navy blue */
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            color: #1E3A8A;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .projects, .skills, .testimonials {
+            margin-bottom: 50px;
+        }
+        h2 {
+            color: #1E3A8A;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .project-item, .testimonial-item {
+            background-color: #1A1A1A;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills li {
+            background-color: #1A1A1A;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        footer {
+            background-color: #0A0A0A;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+        /* Popup Styling */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #1A1A1A;
+            padding: 30px;
+            border-radius: 10px;
+            z-index: 1000;
+            width: 300px;
+            text-align: center;
+        }
+        .popup h3 {
+            color: #1E3A8A;
+        }
+        .popup input[type="email"] {
+            width: 80%;
+            padding: 10px;
+            margin: 20px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .popup input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #1E3A8A;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .popup input[type="submit"]:hover {
+            background-color: #3B82F6;
+        }
+        .popup-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name - Professional Copywriter</h1>
+    </header>
+
+    <nav>
+        <a href="#who-i-am">Who I Am</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#testimonials">Testimonials</a>
+    </nav>
+
+    <section id="who-i-am">
+        <h2>Who I Am</h2>
+        <p>
+            Welcome to my personal portfolio! I am [Your Name], a seasoned copywriter with a passion for crafting compelling content that drives results. With a deep understanding of audience psychology and marketing strategies, I help businesses connect with their target markets through persuasive copy.
+        </p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Successful Projects</h2>
+        <div class="project-item">
+            <h3>Project 1</h3>
+            <p>Description of your successful project, what you achieved, and how it helped your client.</p>
+        </div>
+        <div class="project-item">
+            <h3>Project 2</h3>
+            <p>Description of another successful project, highlighting your skills and the impact of your work.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Copywriting</li>
+            <li>SEO Optimization</li>
+            <li>Content Strategy</li>
+            <li>Email Marketing</li>
+            <li>Social Media Management</li>
+        </ul>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Clients Say</h2>
+        <div class="testimonial-item">
+            <p>"[Your Name] transformed our messaging and helped us reach a broader audience with impactful content."</p>
+            <p>- Happy Client</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"The best investment we've made in our marketing strategy was hiring [Your Name] for our copywriting needs."</p>
+            <p>- Satisfied Client</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Email List Opt-In Popup -->
+    <div id="email-popup" class="popup">
+        <span class="popup-close" onclick="closePopup()">×</span>
+        <h3>Join My Email List</h3>
+        <p>Stay updated with the latest tips and projects.</p>
+        <form action="#" method="post">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
+
+    <script>
+        function closePopup() {
+            document.getElementById('email-popup').style.display = 'none';
+        }
+
+        function openPopup() {
+            document.getElementById('email-popup').style.display = 'block';
+        }
+
+        // Open the popup after 5 seconds
+        setTimeout(openPopup, 5000);
+    </script>
+</body>
+</html>
